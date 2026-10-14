@@ -1,4 +1,5 @@
 theme: jekyll-theme-midnight
 title: Gonzo Programming
+description: The Gonzo Programming Manifesto
 markdown: kramdown
 permalink: pretty
