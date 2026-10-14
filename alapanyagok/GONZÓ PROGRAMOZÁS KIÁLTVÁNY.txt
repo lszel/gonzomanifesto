@@ -1,0 +1,25 @@
+A GONZÓ PROGRAMOZÁS KIÁLTVÁNY alapelvei
+
+A fejlesztő a kód része: Nincs objektív fejlesztés. A szoftver nem egy eszköz, hanem a programozó aznapi idegállapotának, vérnyomásának és dühének bináris lenyomata.
+
+A káosz szent: Ha egy algoritmus túl átlátható, az gyanús. A valódi gonzó kód olyan, mint egy dzsungel: veszélyes, sötét, és csak az alkotója tudja, hol vannak a csapdák.
+
+Tesztelés az éles szerveren: A unit teszt a gyávák és a bürokraták sportja. Az igazi gonzó programozó élesben, a felhasználók sikolyai közepette debuggol.
+
+A dokumentáció fikció: A kódhoz fűzött kommentek nem magyarázatok, hanem belső monológok, politikai kiáltványok vagy segélykiáltások. Aki nem érti a kódot, nem méltó a használatára.
+
+A mutató (pointer) az úr: Használj olyan olyan programnyelvet ahol nem korlátoznak! A közvetlen memóriakezelés a szabadságod záloga. A biztonságos típusok használata  csak egy béklyó. Használd a memória-címeket úgy, mintha nem lenne holnap. A Memory Leak a te senki által meg nem hallott sikolyod.
+
+Koffein-alapú architektúra: A kód minősége egyenesen arányos az elfogyasztott serkentőszerek mennyiségével és fordítottan arányos az alvással töltött órák számával.
+
+Hibaüzenet mint művészet: A hibaüzenet ne segítsen, hanem sokkoljon. A felhasználónak éreznie kell a gép és az alkotó megvetését minden egyes Runtime Error pillanatában.
+
+Sose tisztíts (Refactor): Amit egyszer megírtál a transz állapotában, az szent. Ha belenyúlsz, hogy „szebb” legyen, megölöd a szoftver lelkét.
+
+A határidő csak egy javaslat: A gonzó programozó nem órára dolgozik, hanem az ihlet és a pánik hullámain lovagol. A kód akkor van kész, amikor a fejlesztő összeomlik.
+
+A szoftver legyen kiszámíthatatlan: Egy jó gonzó programban mindig van egy kis véletlenszerűség. Ha minden gombnyomásra ugyanaz történik, az unalmas ipari termék, nem művészet.
+
+Felelősség? Kizárva: A licencszerződés egyetlen pontból álljon: „Ha elindul, az a te bajod.” A fejlesztő nem Isten, csak egy tanú a gép pusztulásánál.
+
+A kilépési stratégia: Amikor a projekt bedől, ne magyarázkodj. Töröld a Git-historyt, égesd el a merevlemezt, és keress egy helyet Mexikóban, ahol nincs térerő.

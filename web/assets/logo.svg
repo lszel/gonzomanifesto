@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background subtle vignette -->
+    <radialGradient id="badgeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18131d" />
+      <stop offset="85%" stop-color="#0a080d" />
+      <stop offset="100%" stop-color="#050407" />
+    </radialGradient>
+
+    <!-- Hot Neon Gradients for crisp strokes -->
+    <linearGradient id="neonOrangeRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="50%" stop-color="#ff3b00" />
+      <stop offset="100%" stop-color="#ff8800" />
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#7000ff" />
+    </linearGradient>
+
+    <linearGradient id="steamyFade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Precise, tight drop shadows & glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="crispShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Dark Shield Badge Container -->
+  <rect width="400" height="400" rx="40" fill="url(#badgeBg)" stroke="#221b2b" stroke-width="2"/>
+  
+  <!-- Outer Precision Technical Accent Ring -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#251b33" stroke-width="1.5" stroke-dasharray="3 6" />
+  <circle cx="200" cy="200" r="162" fill="none" stroke="url(#neonOrangeRed)" stroke-width="2.5" opacity="0.85" filter="url(#softGlow)" stroke-dasharray="120 20 40 20 280 30" />
+
+  <!-- STEAM / CODE CHAOS: Clean bezier curves turning into code brackets and pointers -->
+  <g filter="url(#softGlow)">
+    <!-- Left Steam: Curl to '<' bracket -->
+    <path d="M 175 110 C 170 75, 150 65, 160 40 C 164 30, 158 22, 148 18" 
+          fill="none" stroke="url(#steamyFade)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Center Steam: S-curve turning into '*' pointer -->
+    <path d="M 200 102 C 205 70, 192 50, 202 28 C 206 18, 202 12, 198 8" 
+          fill="none" stroke="url(#neonOrangeRed)" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 194 14 L 206 22 M 206 14 L 194 22 M 200 11 L 200 25" 
+          stroke="#ff8800" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Right Steam: Curl to '>' bracket -->
+    <path d="M 225 110 C 230 75, 250 65, 240 40 C 236 30, 242 22, 252 18" 
+          fill="none" stroke="url(#steamyFade)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- MAIN COFFEE MUG ICON: Bold, geometric, clean lines -->
+  <g filter="url(#crispShadow)">
+    <!-- Mug Handle -->
+    <path d="M 270 148 C 330 148, 335 228, 265 234" 
+          fill="none" stroke="#f0eaf8" stroke-width="14" stroke-linecap="round" />
+    <path d="M 270 148 C 320 148, 325 228, 265 234" 
+          fill="none" stroke="#18131d" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Mug Ceramic Body (clean beveled silhouette) -->
+    <path d="M 118 126 
+             L 282 126 
+             C 280 220, 260 254, 200 254 
+             C 140 254, 120 220, 118 126 Z" 
+          fill="#130e1a" stroke="#f0eaf8" stroke-width="7" stroke-linejoin="round" />
+
+    <!-- Mug Rim Opening with Rich Espresso Layer -->
+    <ellipse cx="200" cy="126" rx="82" ry="18" fill="#241107" stroke="#f0eaf8" stroke-width="7" />
+    <ellipse cx="200" cy="126" rx="72" ry="12" fill="#0d0603" />
+    <ellipse cx="195" cy="127" rx="55" ry="7" fill="#3a1c0d" opacity="0.6" />
+  </g>
+
+  <!-- EMBLEM ON THE MUG: Iconographic, vector-sharp Gonzo Skull -->
+  <g id="sharpGonzoEmblem" transform="translate(0, -6)">
+    <!-- Skull silhouette (solid clean bone white/ivory) -->
+    <path d="M 166 172
+             C 166 142, 234 142, 234 172
+             C 234 186, 226 193, 218 199
+             L 218 214
+             C 218 217, 215 219, 211 219
+             L 189 219
+             C 185 219, 182 217, 182 214
+             L 182 199
+             C 174 193, 166 186, 166 172 Z"
+          fill="#fbf9fc" stroke="#130e1a" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Hunter S. Thompson Icon Glasses: Heavy geometric black frames + vivid contrasting lenses -->
+    <!-- Left Lens: Cyan terminal angle -->
+    <path d="M 170 166 L 194 163 L 196 181 L 172 183 Z" fill="#00f0ff" stroke="#0f0714" stroke-width="2.5" />
+    <!-- Right Lens: Hot magenta/red -->
+    <path d="M 204 163 L 228 166 L 226 183 L 202 181 Z" fill="#ff0055" stroke="#0f0714" stroke-width="2.5" />
+    <!-- Glasses Bridge -->
+    <rect x="193" y="166" width="13" height="3" fill="#0f0714" rx="1"/>
+
+    <!-- Inside the lenses: Minimalist high-tech iconography -->
+    <!-- Null symbol in left lens -->
+    <circle cx="183" cy="173" r="4.5" fill="none" stroke="#0a1a24" stroke-width="1.8" />
+    <line x1="180" y1="176.5" x2="186" y2="169.5" stroke="#0a1a24" stroke-width="1.8" />
+    <!-- Terminal prompt in right lens -->
+    <path d="M 211 170 L 215 173 L 211 176" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="218" y1="176" x2="222" y2="176" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Geometric inverted-triangle nose cavity -->
+    <polygon points="200,188 197,194 203,194" fill="#130e1a" />
+
+    <!-- Minimalist tooth grid (vertical slits) -->
+    <line x1="193" y1="209" x2="193" y2="216" stroke="#130e1a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="200" y1="209" x2="200" y2="216" stroke="#130e1a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="207" y1="209" x2="207" y2="216" stroke="#130e1a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="188" y1="212" x2="212" y2="212" stroke="#130e1a" stroke-width="1.5" />
+  </g>
+
+  <!-- CROSSED POINTER ARROWS (Under the mug - Clean heraldic iconography) -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Arrow 1: bottom-left to top-right -->
+    <line x1="130" y1="285" x2="270" y2="245" stroke="#372648" stroke-width="9" />
+    <line x1="130" y1="285" x2="270" y2="245" stroke="#ff3b00" stroke-width="4" filter="url(#softGlow)" />
+    <!-- Arrowhead 1 -->
+    <path d="M 255 242 L 274 244 L 268 259" fill="none" stroke="#ff3b00" stroke-width="4" filter="url(#softGlow)"/>
+
+    <!-- Arrow 2: top-left to bottom-right -->
+    <line x1="130" y1="245" x2="270" y2="285" stroke="#372648" stroke-width="9" />
+    <line x1="130" y1="245" x2="270" y2="285" stroke="#00f0ff" stroke-width="4" filter="url(#softGlow)" />
+    <!-- Arrowhead 2 -->
+    <path d="M 268 271 L 274 286 L 255 288" fill="none" stroke="#00f0ff" stroke-width="4" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Central Pointer/Memory Badge -->
+  <circle cx="200" cy="265" r="16" fill="#130e1a" stroke="#f0eaf8" stroke-width="3" />
+  <text x="200" y="271" 
+        font-family="'Consolas', 'Courier New', monospace" 
+        font-size="16" 
+        font-weight="900" 
+        text-anchor="middle" 
+        fill="#ff8800">*</text>
+
+  <!-- BOTTOM TYPOGRAPHY & BANNER -->
+  <g transform="translate(0, 310)">
+    <!-- Pill shaped dark plate -->
+    <rect x="70" y="0" width="260" height="42" rx="21" fill="#120c18" stroke="url(#neonOrangeRed)" stroke-width="2" filter="url(#softGlow)"/>
+    
+    <!-- Bold Clean Title -->
+    <text x="200" y="27" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Arial Black', sans-serif" 
+          font-size="18" 
+          font-weight="900" 
+          letter-spacing="5" 
+          text-anchor="middle" 
+          fill="#ffffff">
+      GONZO CODER
+    </text>
+  </g>
+
+  <!-- Subtitle Terminal Line -->
+  <text x="200" y="374" 
+        font-family="'Consolas', 'Fira Code', 'Courier New', monospace" 
+        font-size="11" 
+        font-weight="bold" 
+        letter-spacing="2" 
+        text-anchor="middle" 
+        fill="#00f0ff" 
+        opacity="0.85">
+    while(caffeine) { code(); }
+  </text>
+</svg>

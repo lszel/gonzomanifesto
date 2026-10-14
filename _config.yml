@@ -1,0 +1,4 @@
+theme: jekyll-theme-midnight
+title: Gonzo Programming
+markdown: kramdown
+permalink: pretty
