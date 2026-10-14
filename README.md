@@ -8,9 +8,9 @@
 
 ---
 
-### [👉 Magyar változat / Hungarian version](web/hu/README.md)
-### [👉 English version](web/en/README.md)
-### [🌐 All 68 languages / Mind a 68 nyelv](web/hu/README.md#languages--nyelvek)
+### [👉 Magyar változat / Hungarian version](web/hu/)
+### [👉 English version](web/en/)
+### [🌐 All 68 languages / Mind a 68 nyelv](web/hu/)
 
 ---
 
